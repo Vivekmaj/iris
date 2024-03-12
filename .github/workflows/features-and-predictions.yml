@@ -28,7 +28,7 @@ jobs:
       - name: execute python workflows from bash script
         env: 
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
-        run: ./src/run-feature-and-prediction-pipelines.sh
+        run: chmod +x ./src/run-feature-and-prediction-pipelines.sh
 
       - name: publish github pages
         uses: stefanzweifel/git-auto-commit-action@v4
