@@ -1,0 +1,13 @@
+pandas
+parsedatetime
+scikit-learn
+hopsworks==3.4.2
+typing-extensions==4.3.0
+numpy
+tqdm
+requests
+python-dotenv
+seaborn
+nbconvert
+
+-e .
