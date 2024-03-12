@@ -30,6 +30,9 @@ jobs:
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
         run: chmod +x ./src/run-feature-and-prediction-pipelines.sh
 
+      - name: Check git status
+        run: git status
+        
       - name: publish github pages
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
