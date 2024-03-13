@@ -28,7 +28,10 @@ jobs:
       - name: execute python workflows from bash script
         env: 
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
-        run: chmod +x ./src/run-feature-and-prediction-pipelines.sh
+          HOPSWORKS_PROJECT_NAME: ${{ secrets.HOPSWORKS_PROJECT_NAME }}
+        run: |
+          chmod +x ./src/run-feature-and-prediction-pipelines.sh
+          ./src/run-feature-and-prediction-pipelines.sh
 
       - name: Check git status
         run: git status
