@@ -9,5 +9,6 @@ requests
 python-dotenv
 seaborn
 nbconvert
+ipykernel
 
 -e .
